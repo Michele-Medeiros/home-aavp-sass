@@ -220,10 +220,7 @@ header .title-header {
   background-color: white; }
 
 .cards h2.header {
-  font-size: 40px;
-  margin: 0 0 30px 0;
-  text-transform: uppercase;
-  letter-spacing: 1px; }
+  margin: 0 0 30px 0; }
 
 .content {
   margin: 20px;
@@ -278,41 +275,83 @@ header .title-header {
   cursor: pointer;
   transition: all 0.3s ease; }
 
-.active {
-  background-color: white;
-  color: black; }
-
 .services .content .fab {
   display: none; }
 
 @media (max-width: 900px) {
+  .cards {
+    display: none; }
+  .button-container {
+    display: none; }
+  .btn_cards_mobile h2.header {
+    margin: 0 0 30px 0; }
+  .content_atl {
+    margin: 20px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #c7c6c5;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .content_atl:hover {
+    color: white; }
+  .content_atl:hover a {
+    border-color: white;
+    background: #77bdbc; }
+  .content_atl > * {
+    flex: 1 1 100%; }
+  .content_atl h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin: 30px 0px 50px 0; }
   .content h2 {
     font-size: 24px;
     margin: 10px 0; }
   .content p {
     font-size: 18px;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 60px; }
+  .content p {
+    font-size: 18px;
     margin: 10px 0; }
-  .content .fab {
-    font-size: 40px;
-    margin: 10px 0; }
-  .cards {
-    padding: 0; }
-  .button-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row: 1 / span 3;
-    justify-items: center;
-    padding: 0 50px;
-    background-color: white;
-    padding: 60px 20px 30px 20px; }
-  .button-container button {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%; } }
-
-@media (max-width: 600px) {
-  .cards {
-    display: none; } }
+  .content a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #231d46;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease; }
+  .btn_cards_mobile {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background-color: white; }
+  #imgAtualidades {
+    align-items: center;
+    width: 40px;
+    height: 40px; }
+  .services_atl {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0px; }
+  .content_atl-1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 1; }
+  .content_atl-2 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 1; }
+  .content_alt-3 {
+    grid-row: 5 / 6;
+    grid-column: 1 / 1; } }
 
 * {
   margin: 0;
@@ -396,6 +435,11 @@ h1 {
   width: 310px;
   color: black; }
 
+.cards h2.header {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
 @media screen and (max-width: 900px) {
   .title-header {
     font-size: 2rem; }
@@ -407,7 +451,8 @@ h1 {
 
 #verMais-btn {
   width: 28%;
-  padding: 15px; }
+  padding: 15px;
+  margin: 80px 0 40px 0px; }
 
 .menu-btn {
   background-color: #3c3d3d;

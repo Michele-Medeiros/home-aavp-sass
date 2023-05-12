@@ -4,6 +4,7 @@
 #verMais-btn {
   width: 28%;
   padding: 15px;
+  margin: 80px 0 40px 0px;
 }
 .menu-btn {
   background-color: $cor-btn;
@@ -17,6 +18,13 @@
 .active {
   background-color: $light;
   color: black;
+}
+
+@media (max-width: 900px) {
+  // .active {
+  //   background-color: $hover_atualidades;
+  //   color: $light;
+  // }
 }
 
 @media (max-width: 600px) {

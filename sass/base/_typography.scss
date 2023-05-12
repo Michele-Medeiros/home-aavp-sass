@@ -85,6 +85,12 @@ h1 {
   color: $dark;
 }
 
+.cards h2.header {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 @media screen and (max-width: 900px) {
   .title-header {
     font-size: 2rem;
