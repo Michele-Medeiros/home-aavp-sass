@@ -1,0 +1,32 @@
+.content-texts {
+  margin-top: 195px;
+  margin-left: 24px;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/bg11.png);
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    height: 85vh;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 85vh;
+    width: auto;
+  }
+  .title-header {
+    font-size: 0.2rem;
+  }
+
+  .text-header {
+    font-size: 0.5rem;
+  }
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="barra_de_navegacao" id="myTopnav">
+        <a href="#home" class="active" class="itens">
+          <img
+            src="img/lg_branco_C.svg"
+            alt="Logo"
+            class="logo"
+            id="logotipo"
+          />
+        </a>
+        <div id="navBar" class="navBar">
+          <div class="dropdown">
+            <button class="dropbtn" id="sobre">
+              Sobre
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">A AAVP</a>
+              <a href="#">Ministério da Cultura e Parcerias</a>
+            </div>
+          </div>
+          <!------------------------------------------------------------>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Atualidades
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Comunicados</a>
+              <a href="#">Notícias</a>
+              <a href="#">Eventos</a>
+            </div>
+          </div>
+          <a href="#about" class="itens">Adesão</a>
+          <a href="#contacto" class="itens">Fale Conosco</a>
+        </div>
+        <!------------------------FIM DA NAV-------------------------->
+        <a
+          href="javascript:void(0);"
+          style="font-size: 35px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </nav>
+
+      <div class="content-texts">
+        <h2 class="text-header">AAVP</h2>
+        <h1 class="title-header">ASSOCIAÇÃO DE ARTISTAS,<br />VISUAIS</h1>
+        <h2 class="text-header">Em Portugal</h2>
+      </div>
+    </header>
+
+    <div class="about">
+      <div class="about-image">
+        <img src="img/elem_rosa.png" alt="" id="elemento-rosa" />
+      </div>
+      <p class="about-text">
+        AAVP reivindica o seu espaço dentro deste momento do debate apoiando-se
+        na especificidade do trabalho de artista visual, para quem o trabalho
+        criativo e imaterial equivale ao trabalho orientado à produtividade e ao
+        objecto. A AAVP deseja também fazer equivaler esse conceito de trabalho
+        ao trabalho dos outros sectores. De uma forma geral e transversal a AAVP
+        dispõe-se a lutar por mais e melhores oportunidades de
+        auto-sustentabilidade da/o artista em Portugal.
+      </p>
+    </div>
+    <!-- ----------------------------------------------------------------------------FIM -->
+    <div>
+      <div class="button-container">
+        <button id="comunicados-btn" class="menu-btn">Comunicados</button>
+        <button id="noticias-btn" class="menu-btn">Notícias</button>
+        <button id="eventos-btn" class="menu-btn">Eventos</button>
+      </div>
+
+      <div class="cards">
+        <div class="oculto" id="comunicados">
+          <div class="services">
+            <div class="content content-1">
+              <div class="fab fa-twitter"></div>
+              <p id="data">xx/xx/xxxx</p>
+              <h2>Comunicados</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Expedita ullam aliquid non eligendi, nemo est neque reiciendis
+                error?
+              </p>
+              <a href="#">Ler mais</a>
+            </div>
+            <div class="content content-2">
+              <div class="fab fa-instagram"></div>
+              <p id="data">xx/xx/xxxx</p>
+              <h2>Comunicados</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Expedita ullam aliquid non eligendi, nemo est neque reiciendis
+                error?
+              </p>
+              <a href="#">Ler mais</a>
+            </div>
+            <div class="content content-3">
+              <div class="fab fa-youtube"></div>
+              <p id="data">xx/xx/xxxx</p>
+              <h2>Comunicados</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Expedita ullam aliquid non eligendi, nemo est neque reiciendis
+                error?
+              </p>
+              <a href="#">Ler mais</a>
+            </div>
+          </div>
+          <button id="verMais-btn" class="verMais">Ver mais Comunicados</button>
+        </div>
+
+        <div id="noticias">
+          <div class="services">
+            <div class="content content-1">
+              <div class="fab fa-twitter"></div>
+              <p id="data">xx/xx/xxxx</p>
+              <h2>Notícias</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Expedita ullam aliquid non eligendi, nemo est neque reiciendis
+                error?
+              </p>
+              <a href="#">Ler mais</a>
+            </div>
+            <div class="content content-2">
+              <div class="fab fa-instagram"></div>
+              <p id="data">xx/xx/xxxx</p>
+              <h2>Notícias</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Expedita ullam aliquid non eligendi, nemo est neque reiciendis
+                error?
+              </p>
+              <a href="#">Ler mais</a>
+            </div>
+            <div class="content content-3">
+              <div class="fab fa-youtube"></div>
+              <p id="data">xx/xx/xxxx</p>
+              <h2>Notícias</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Expedita ullam aliquid non eligendi, nemo est neque reiciendis
+                error?
+              </p>
+              <a href="#">ler mais</a>
+            </div>
+          </div>
+          <button id="verMais-btn" class="verMais">Ver mais Notícias</button>
+        </div>
+
+        <div class="oculto" id="eventos">
+          <div class="services">
+            <div class="content content-1">
+              <div class="fab fa-twitter"></div>
+              <p id="data">xx/xx/xxxx</p>
+              <h2>Eventos</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Expedita ullam aliquid non eligendi, nemo est neque reiciendis
+                error?
+              </p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="content content-2">
+              <div class="fab fa-instagram"></div>
+              <p id="data">xx/xx/xxxx</p>
+              <h2>Eventos</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Expedita ullam aliquid non eligendi, nemo est neque reiciendis
+                error?
+              </p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="content content-3">
+              <div class="fab fa-youtube"></div>
+              <p id="data">xx/xx/xxxx</p>
+              <h2>Eventos</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Expedita ullam aliquid non eligendi, nemo est neque reiciendis
+                error?
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <button id="verMais-btn" class="verMais">Ver mais Comunicados</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // ------BARRA DE NAVEGAÇÃO-------------------------------------
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "barra_de_navegacao") {
+          x.className += " responsive";
+        } else {
+          x.className = "barra_de_navegacao";
+        }
+      }
+
+      // ------ANIMAÇÃO LOGO---------------------------------------------
+      var logo = document.getElementById("logotipo");
+      logo.addEventListener("click", function () {
+        logo.classList.add("animated");
+        setTimeout(function () {
+          logo.classList.remove("animated");
+        }, 1000); // Remove a classe "animated" após 1 segundo
+      });
+
+      //Tabela ATUALIDADES
+      // const comunicadosBtn = document.getElementById("comunicados-btn");
+      // const noticiasBtn = document.getElementById("noticias-btn");
+      // const eventosBtn = document.getElementById("eventos-btn");
+
+      // const comunicadosDiv = document.querySelector("comunicados-btn");
+      // const noticiasDiv = document.querySelector("noticias-btn");
+      // const eventosDiv = document.querySelector("eventos-btn");
+
+      const btn_test = document.getElementById("noticias-btn");
+      btn_test.classList.add("active");
+
+      // ------BOTÕES DE ATUALIDADES - PARETE I --------------------------------
+
+      const comunicadosBtn = document.getElementById("comunicados-btn");
+      const noticiasBtn = document.getElementById("noticias-btn");
+      const eventosBtn = document.getElementById("eventos-btn");
+      const comunicados = document.getElementById("comunicados");
+      const noticias = document.getElementById("noticias");
+      const eventos = document.getElementById("eventos");
+      const verMaisbtn = document.getElementById("verMais-btn");
+      const verMais = document.getElementById("verMais");
+
+      comunicadosBtn.addEventListener("click", function () {
+        comunicados.style.display = "block";
+        noticias.style.display = "none";
+        eventos.style.display = "none";
+      });
+
+      noticiasBtn.addEventListener("click", function () {
+        comunicados.style.display = "none";
+        noticias.style.display = "block";
+        eventos.style.display = "none";
+      });
+
+      eventosBtn.addEventListener("click", function () {
+        comunicados.style.display = "none";
+        noticias.style.display = "none";
+        eventos.style.display = "block";
+      });
+      // ------BOTÕES DE ATUALIDADES - PARETE II --------------------------------
+
+      // selecione todos os botões do menu
+      const menuBtns = document.querySelectorAll(".menu-btn");
+
+      // para cada botão, adicione um ouvinte de eventos para quando ele for clicado
+      menuBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          // remova a classe "active" de qualquer outro botão do menu que possa estar ativo
+          menuBtns.forEach(function (btn) {
+            btn.classList.remove("active");
+          });
+          // adicione a classe "active" ao botão que foi clicado
+          btn.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
