@@ -55,20 +55,19 @@ header {
   background-image: url(/img/bg11.png);
   background-position: center;
   background-size: cover; }
+  header .text-header {
+    color: #b8916a;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  header .title-header {
+    margin-bottom: 10px; }
 
 @media screen and (max-width: 900px) {
   header {
     height: 85vh;
-    width: auto; } }
-
-@media screen and (max-width: 600px) {
-  header {
-    height: 85vh;
     width: auto; }
-  .title-header {
-    font-size: 0.2rem; }
-  .text-header {
-    font-size: 0.5rem; } }
+    header .content-texts {
+      margin-top: 100px; } }
 
 header .logo {
   width: 150px;
@@ -97,7 +96,7 @@ header .barra_de_navegacao .itens {
 header .barra_de_navegacao a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -149,14 +148,6 @@ header .navBar {
     color: #b8916a; }
   header .navBar .dropdown:hover .dropdown-content {
     display: block; }
-
-header .text-header {
-  color: #b8916a;
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-header .title-header {
-  margin-bottom: 10px; }
 
 @media screen and (max-width: 900px) {
   #navBar {
@@ -358,6 +349,11 @@ header .title-header {
     width: 80px;
     height: 80px; } }
 
+@media (max-width: 400px) {
+  #imgAtualidades {
+    width: 50px;
+    height: 50px; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -443,20 +439,32 @@ html {
   letter-spacing: 1px; }
 
 .btn_cards_mobile .content_atl h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
   margin: 30px 0 30px 0;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+@media screen and (max-width: 400px) {
+  .btn_cards_mobile .content_atl h2 {
+    font-size: 1.3rem;
+    font-weight: 400; } }
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block; } }
+
 #btn-mobile {
   display: none; }
 
-#verMais-btn {
+.cards #verMais-btn {
   width: 28%;
   padding: 15px;
   margin: 80px 0 40px 0px; }
 
-.menu-btn {
+.button-container .menu-btn {
   background-color: #3c3d3d;
   color: white;
   border: none;
@@ -465,13 +473,9 @@ html {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out; }
 
-.active {
+.button-container .active {
   background-color: white;
   color: black; }
-
-@media (max-width: 600px) {
-  .menu-toggle {
-    display: block; } }
 
 body {
   padding: 0;

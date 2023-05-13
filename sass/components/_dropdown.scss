@@ -1,4 +1,4 @@
-.content .links ul{
+.content .links ul {
   position: absolute;
   background: #171c24;
   top: 80px;
@@ -6,26 +6,26 @@
   opacity: 0;
   visibility: hidden;
 }
-.content .links li:hover > ul{
+.content .links li:hover > ul {
   top: 70px;
   opacity: 1;
   visibility: visible;
   transition: all 0.3s ease;
 }
-.content .links ul li a{
+.content .links ul li a {
   display: block;
   width: 100%;
   line-height: 30px;
-  border-radius: 0px!important;
+  border-radius: 0px !important;
 }
-.content .links ul ul{
+.content .links ul ul {
   position: absolute;
   top: 0;
   right: calc(-100% + 8px);
 }
-.content .links ul li{
+.content .links ul li {
   position: relative;
 }
-.content .links ul li:hover ul{
+.content .links ul li:hover ul {
   top: 0;
 }

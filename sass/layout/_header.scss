@@ -8,25 +8,24 @@ header {
   background-image: url(/img/bg11.png);
   background-position: center;
   background-size: cover;
+
+  .text-header {
+    color: $destaque_texto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .title-header {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 900px) {
   header {
     height: 85vh;
     width: auto;
-  }
-}
 
-@media screen and (max-width: 600px) {
-  header {
-    height: 85vh;
-    width: auto;
-  }
-  .title-header {
-    font-size: 0.2rem;
-  }
-
-  .text-header {
-    font-size: 0.5rem;
+    .content-texts {
+      margin-top: 100px;
+    }
   }
 }

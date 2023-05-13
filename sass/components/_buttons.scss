@@ -1,34 +1,31 @@
-#btn-mobile {
-  display: none;
-}
-#verMais-btn {
-  width: 28%;
-  padding: 15px;
-  margin: 80px 0 40px 0px;
-}
-.menu-btn {
-  background-color: $cor-btn;
-  color: $light;
-  border: none;
-  padding: 15px;
-  width: 33%;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-.active {
-  background-color: $light;
-  color: black;
-}
-
-@media (max-width: 900px) {
-  // .active {
-  //   background-color: $hover_atualidades;
-  //   color: $light;
-  // }
-}
-
 @media (max-width: 600px) {
   .menu-toggle {
     display: block;
+  }
+}
+
+#btn-mobile {
+  display: none;
+}
+.cards {
+  #verMais-btn {
+    width: 28%;
+    padding: 15px;
+    margin: 80px 0 40px 0px;
+  }
+}
+.button-container {
+  .menu-btn {
+    background-color: $cor-btn;
+    color: $light;
+    border: none;
+    padding: 15px;
+    width: 33%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .active {
+    background-color: $light;
+    color: black;
   }
 }

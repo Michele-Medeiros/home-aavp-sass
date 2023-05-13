@@ -52,6 +52,7 @@ html {
   line-height: 1.5;
   text-align: justify;
 }
+
 .button-container {
   .menu-btn {
     font-family: "Roboto", sans-serif;
@@ -96,9 +97,18 @@ html {
 
 .btn_cards_mobile {
   .content_atl h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
     margin: 30px 0 30px 0;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+  }
+  @media screen and (max-width: 400px) {
+    .content_atl h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
   }
 }

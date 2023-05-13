@@ -101,6 +101,13 @@
   }
 }
 
+@media (max-width: 400px) {
+  #imgAtualidades {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 // @media (max-width: 900px) {
 //   .services_atl {
 //     grid-template-columns: repeat(1, 1fr);
