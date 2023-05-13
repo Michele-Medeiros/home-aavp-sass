@@ -69,6 +69,30 @@ header {
     header .content-texts {
       margin-top: 100px; } }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0; }
+  .footer a:link {
+    color: white;
+    text-decoration: underline;
+    padding-bottom: 10px; }
+  .footer a:visited {
+    color: white; }
+  .footer a:hover {
+    color: #77bdbc; }
+
+#imgFooter {
+  align-items: center;
+  width: 80px;
+  height: 80px; }
+
+#assinatura {
+  color: white;
+  padding-bottom: 5px; }
+
 header .logo {
   width: 150px;
   height: 54px;
@@ -451,6 +475,12 @@ html {
   .btn_cards_mobile .content_atl h2 {
     font-size: 1.3rem;
     font-weight: 400; } }
+
+#assinatura {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white; }
 
 @media (max-width: 600px) {
   .menu-toggle {

@@ -25,7 +25,7 @@
         </a>
         <div id="navBar" class="navBar">
           <div class="dropdown">
-            <button class="dropbtn" id="sobre">
+            <button class="dropbtn sobreBtn" id="sobre">
               Sobre
               <i class="fa fa-caret-down"></i>
             </button>
@@ -41,9 +41,11 @@
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="#">Comunicados</a>
-              <a href="#">Notícias</a>
-              <a href="#">Eventos</a>
+              <a class="comunicadosNav" href="comunicados" id="comunicados-link"
+                >Comunicados</a
+              >
+              <a class="noticiasNav" href="noticias">Notícias</a>
+              <a class="eventosNAV" href="eventos">Eventos</a>
             </div>
           </div>
           <a href="#about" class="itens">Adesão</a>
@@ -66,7 +68,7 @@
       </div>
     </header>
 
-    <div class="about">
+    <div class="about" id="about">
       <div class="about-image">
         <img src="img/elem_rosa.png" alt="" id="elemento-rosa" />
       </div>
@@ -81,7 +83,7 @@
       </p>
     </div>
     <!-- ----------------------------------------------------------------------------FIM -->
-    <div>
+    <div class="atualidades">
       <div class="button-container">
         <button id="comunicados-btn" class="menu-btn">Comunicados</button>
         <button id="noticias-btn" class="menu-btn">Notícias</button>
@@ -248,6 +250,20 @@
       </div>
     </div>
 
+    <footer class="footer" id="footer">
+      <div class="imgFooter">
+        <img id="imgFooter" src="img/logo_branco_R.svg" alt="" />
+      </div>
+      <a id="linksDownload" href="Estatutos"> Estatutos <br </a>
+      <a id="linksDownload" href="Ficha de Adesão"> Ficha de adesão</a>
+      <p id="assinatura">
+        2023 by
+        <a href="https://www.linkedin.com/in/michele-franca-medeiros/"
+          >Michele Medeiros</a
+        >
+      </p>
+    </footer>
+
     <script>
       // ------BARRA DE NAVEGAÇÃO-------------------------------------
       function myFunction() {
@@ -259,6 +275,13 @@
         }
       }
 
+      //--------------Rolagem da barra de navegação para o elemento----------------------
+      // Adiciona um listener de evento para o clique do botão 'Sobre'
+      document.querySelector(".sobreBtn").addEventListener("click", () => {
+        // Rola a página para o elemento com id 'about'
+        document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
+      });
+
       // ------ANIMAÇÃO LOGO---------------------------------------------
       var logo = document.getElementById("logotipo");
       logo.addEventListener("click", function () {
@@ -267,15 +290,6 @@
           logo.classList.remove("animated");
         }, 1000); // Remove a classe "animated" após 1 segundo
       });
-
-      //Tabela ATUALIDADES
-      // const comunicadosBtn = document.getElementById("comunicados-btn");
-      // const noticiasBtn = document.getElementById("noticias-btn");
-      // const eventosBtn = document.getElementById("eventos-btn");
-
-      // const comunicadosDiv = document.querySelector("comunicados-btn");
-      // const noticiasDiv = document.querySelector("noticias-btn");
-      // const eventosDiv = document.querySelector("eventos-btn");
 
       const btn_test = document.getElementById("noticias-btn");
       btn_test.classList.add("active");
@@ -308,7 +322,29 @@
         noticias.style.display = "none";
         eventos.style.display = "block";
       });
-      // ------BOTÕES DE ATUALIDADES - PARETE II --------------------------------
+      // ------BOTÕES DE ATUALIDADES - PARETE II - SCROLL --------------------------------
+
+      document
+        .querySelector(".comunicadosNav")
+        .addEventListener("click", () => {
+          document
+            .querySelector("#comunicados")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+
+      document.querySelector(".noticiasNav").addEventListener("click", () => {
+        document
+          .querySelector("#noticias")
+          .scrollIntoView({ behavior: "smooth" });
+      });
+
+      // document.querySelector(".eventosNav").addEventListener("click", () => {
+      //   document
+      //     .querySelector("#eventos")
+      //     .scrollIntoView({ behavior: "smooth" });
+      // });
+
+      // ------BOTÕES DE ATUALIDADES - PARETE III --------------------------------
 
       // selecione todos os botões do menu
       const menuBtns = document.querySelectorAll(".menu-btn");

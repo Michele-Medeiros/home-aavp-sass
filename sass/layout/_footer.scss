@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+
+  a:link {
+    color: $light;
+    text-decoration: underline;
+    padding-bottom: 10px;
+  }
+
+  a:visited {
+    color: $light;
+  }
+
+  a:hover {
+    color: $btn_ver_mais_hover;
+  }
+}
+
+#imgFooter {
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+
+#assinatura {
+  color: $light;
+  padding-bottom: 5px;
+}
