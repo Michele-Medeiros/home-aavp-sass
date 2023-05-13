@@ -20,9 +20,13 @@ header {
   }
 }
 
+#text-header {
+  padding-bottom: 50px;
+}
+
 @media screen and (max-width: 900px) {
   header {
-    height: 85vh;
+    height: auto;
     width: auto;
 
     .content-texts {

@@ -74,9 +74,12 @@ header {
   header .title-header {
     margin-bottom: 10px; }
 
+#text-header {
+  padding-bottom: 50px; }
+
 @media screen and (max-width: 900px) {
   header {
-    height: 85vh;
+    height: auto;
     width: auto; }
     header .content-texts {
       margin-top: 100px; } }
