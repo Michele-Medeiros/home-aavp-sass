@@ -41,7 +41,10 @@
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <a class="comunicadosNav" href="comunicados" id="comunicados-link"
+              <a
+                class="comunicadosNav"
+                href="#comunicados"
+                id="comunicados-link"
                 >Comunicados</a
               >
               <a class="noticiasNav" href="noticias">Notícias</a>
@@ -83,7 +86,7 @@
       </p>
     </div>
     <!-- ----------------------------------------------------------------------------FIM -->
-    <div class="atualidades">
+    <div class="atualidades" id="atualidades">
       <div class="button-container">
         <button id="comunicados-btn" class="menu-btn">Comunicados</button>
         <button id="noticias-btn" class="menu-btn">Notícias</button>
@@ -327,22 +330,15 @@
       document
         .querySelector(".comunicadosNav")
         .addEventListener("click", () => {
+          document.getElementById("comunicados-btn").classList.add("active");
+          document.getElementById("noticias-btn").classList.remove("active");
+          comunicados.style.display = "block";
+          noticias.style.display = "none";
+          eventos.style.display = "none";
           document
-            .querySelector("#comunicados")
+            .querySelector("#atualidades")
             .scrollIntoView({ behavior: "smooth" });
         });
-
-      document.querySelector(".noticiasNav").addEventListener("click", () => {
-        document
-          .querySelector("#noticias")
-          .scrollIntoView({ behavior: "smooth" });
-      });
-
-      // document.querySelector(".eventosNav").addEventListener("click", () => {
-      //   document
-      //     .querySelector("#eventos")
-      //     .scrollIntoView({ behavior: "smooth" });
-      // });
 
       // ------BOTÕES DE ATUALIDADES - PARETE III --------------------------------
 
