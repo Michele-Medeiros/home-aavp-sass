@@ -3,21 +3,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 25px 0;
+  text-align: center;
+  padding: 10px 0 0 0;
+  background-color: $dark;
 
-  a:link {
-    color: $light;
-    text-decoration: underline;
-    padding-bottom: 10px;
-  }
+  // a:link {
+  //   color: $light;
+  //   text-decoration: underline;
+  //   padding-bottom: 10px;
+  // }
 
-  a:visited {
-    color: $light;
-  }
+  // a:visited {
+  //   color: $light;
+  // }
 
-  a:hover {
-    color: $btn_ver_mais_hover;
-  }
+  // a:hover {
+  //   color: $btn_ver_mais_hover;
+  // }
 }
 
 #imgFooter {

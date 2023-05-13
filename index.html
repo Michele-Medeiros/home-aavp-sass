@@ -12,61 +12,64 @@
     />
     <link rel="stylesheet" href="/css/main.css" />
   </head>
+
   <body>
     <header class="header">
-      <nav class="barra_de_navegacao" id="myTopnav">
-        <a href="#home" class="active" class="itens">
-          <img
-            src="img/lg_branco_C.svg"
-            alt="Logo"
-            class="logo"
-            id="logotipo"
-          />
-        </a>
-        <div id="navBar" class="navBar">
-          <div class="dropdown">
-            <button class="dropbtn sobreBtn" id="sobre">
-              Sobre
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">A AAVP</a>
-              <a href="#">Ministério da Cultura e Parcerias</a>
+      <div class="nav-wrapper">
+        <nav class="barra_de_navegacao" id="myTopnav">
+          <a href="#home" class="active" class="itens">
+            <img
+              src="img/lg_branco_C.svg"
+              alt="Logo"
+              class="logo"
+              id="logotipo"
+            />
+          </a>
+          <div id="navBar" class="navBar">
+            <div class="dropdown">
+              <button class="dropbtn sobreBtn" id="sobre">
+                Sobre
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <!-- <div class="dropdown-content">
+                <a href="#">A AAVP</a>
+                <a href="#">Ministério da Cultura e Parcerias</a>
+              </div> -->
             </div>
-          </div>
-          <!------------------------------------------------------------>
-          <div class="dropdown">
-            <button class="dropbtn">
-              Atualidades
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a
-                class="comunicadosNav"
-                href="#comunicados"
-                id="comunicados-link"
-                >Comunicados</a
-              >
-              <a class="noticiasNav" href="#noticias" id="noticias-link"
-                >Notícias</a
-              >
-              <a class="eventosNAV" href="#eventos" id="eventos-link"
-                >Eventos</a
-              >
+            <!------------------------------------------------------------>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Atualidades
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a
+                  class="comunicadosNav"
+                  href="#comunicados"
+                  id="comunicados-link"
+                  >Comunicados</a
+                >
+                <a class="noticiasNav" href="#noticias" id="noticias-link"
+                  >Notícias</a
+                >
+                <a class="eventosNAV" href="#eventos" id="eventos-link"
+                  >Eventos</a
+                >
+              </div>
             </div>
+            <a href="#about" class="itens">Adesão</a>
+            <a href="#contacto" class="itens">Fale Conosco</a>
           </div>
-          <a href="#about" class="itens">Adesão</a>
-          <a href="#contacto" class="itens">Fale Conosco</a>
-        </div>
-        <!------------------------FIM DA NAV-------------------------->
-        <a
-          href="javascript:void(0);"
-          style="font-size: 35px"
-          class="icon"
-          onclick="myFunction()"
-          >&#9776;</a
-        >
-      </nav>
+          <!------------------------FIM DA NAV-------------------------->
+          <a
+            href="javascript:void(0);"
+            style="font-size: 35px"
+            class="icon"
+            onclick="myFunction()"
+            >&#9776;</a
+          >
+        </nav>
+      </div>
 
       <div class="content-texts">
         <h2 class="text-header">AAVP</h2>
@@ -90,8 +93,9 @@
       </p>
     </div>
     <!-- ----------------------------------------------------------------------------FIM -->
-    <div class="atualidades" id="atualidades">
-      <div class="button-container">
+    <div></div>
+    <div class="atualidades">
+      <div class="button-container" id="atualidades">
         <button id="comunicados-btn" class="menu-btn">Comunicados</button>
         <button id="noticias-btn" class="menu-btn">Notícias</button>
         <button id="eventos-btn" class="menu-btn">Eventos</button>
@@ -261,16 +265,14 @@
       <div class="imgFooter">
         <img id="imgFooter" src="img/logo_branco_R.svg" alt="" />
       </div>
-      <a id="linksDownload" href="Estatutos"> Estatutos <br </a>
-      <a id="linksDownload" href="Ficha de Adesão"> Ficha de adesão</a>
+      <!-- <a id="linksDownload" href="Estatutos"> Estatutos <br </a>
+      <a id="linksDownload" href="Ficha de Adesão"> Ficha de adesão</a> -->
       <p id="assinatura">
-        2023 by
-        <a href="https://www.linkedin.com/in/michele-franca-medeiros/"
-          >Michele Medeiros</a
-        >
+        Ferramentas e aplicação multimédia 1.º ano - 2.º semestre de 2023<br />
+        Michele Medeiros - 80305 <br />
+        michelefmedeiros@gmail.com
       </p>
     </footer>
-
     <script>
       // ------BARRA DE NAVEGAÇÃO-------------------------------------
       function myFunction() {
