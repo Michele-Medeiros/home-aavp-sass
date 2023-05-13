@@ -10,36 +10,37 @@ html {
   font-weight: normal;
   font-style: oblique;
 }
-h1 {
-  color: $light;
-  font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
-  font-size: 1.8rem;
-  font-weight: 900;
-}
-.title-header {
-  font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
-  font-weight: 900;
-  color: $light;
-  font-size: 3rem;
-}
-
-.text-header {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  color: $destaque_texto;
-  font-size: 2rem;
-}
-
-.wrapper {
-  font-size: 1.6rem;
-}
-
 .main-nav {
   a {
     text-align: center;
     color: $dark;
     text-transform: uppercase;
     font-size: 1.8rem;
+  }
+}
+
+.header {
+  .title-header {
+    font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+    font-weight: 900;
+    color: $light;
+    font-size: 3rem;
+  }
+
+  .text-header {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: $destaque_texto;
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 900px) {
+    .title-header {
+      font-size: 2rem;
+    }
+
+    .text-header {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -51,52 +52,53 @@ h1 {
   line-height: 1.5;
   text-align: justify;
 }
-.menu-btn {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center;
-}
-
-.content h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $dark;
-}
-.content p {
-  font-size: 18px;
-  color: $dark;
-  line-height: 1.5;
-}
-#data {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-#verMais-btn {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.2rem;
-  text-align: center;
-  width: 310px;
-  color: $dark;
-}
-
-.cards h2.header {
-  font-size: 40px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-@media screen and (max-width: 900px) {
-  .title-header {
-    font-size: 2rem;
-  }
-
-  .text-header {
+.button-container {
+  .menu-btn {
+    font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+.cards {
+  .content h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: $dark;
+  }
+  .content p {
+    font-size: 18px;
+    color: $dark;
+    line-height: 1.5;
+  }
+  #data {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  #verMais-btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 310px;
+    color: $dark;
+  }
+  .cards h2.header {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.btn_cards_mobile {
+  .content_atl h2 {
+    margin: 30px 0 30px 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 }
