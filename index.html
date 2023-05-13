@@ -47,8 +47,12 @@
                 id="comunicados-link"
                 >Comunicados</a
               >
-              <a class="noticiasNav" href="noticias">Notícias</a>
-              <a class="eventosNAV" href="eventos">Eventos</a>
+              <a class="noticiasNav" href="#noticias" id="noticias-link"
+                >Notícias</a
+              >
+              <a class="eventosNAV" href="#eventos" id="eventos-link"
+                >Eventos</a
+              >
             </div>
           </div>
           <a href="#about" class="itens">Adesão</a>
@@ -305,40 +309,70 @@
       const comunicados = document.getElementById("comunicados");
       const noticias = document.getElementById("noticias");
       const eventos = document.getElementById("eventos");
-      const verMaisbtn = document.getElementById("verMais-btn");
-      const verMais = document.getElementById("verMais");
+      // const verMaisbtn = document.getElementById("verMais-btn");
+      // const verMais = document.getElementById("verMais");
 
-      comunicadosBtn.addEventListener("click", function () {
+      function btnComunicadosHandler() {
         comunicados.style.display = "block";
         noticias.style.display = "none";
         eventos.style.display = "none";
-      });
+      }
 
-      noticiasBtn.addEventListener("click", function () {
+      function btnNoticiasHandler() {
         comunicados.style.display = "none";
         noticias.style.display = "block";
         eventos.style.display = "none";
-      });
+      }
 
-      eventosBtn.addEventListener("click", function () {
+      function btnEventosHandler() {
         comunicados.style.display = "none";
         noticias.style.display = "none";
         eventos.style.display = "block";
-      });
+      }
+
+      comunicadosBtn.addEventListener("click", btnComunicadosHandler);
+      noticiasBtn.addEventListener("click", btnNoticiasHandler);
+      eventosBtn.addEventListener("click", btnEventosHandler);
       // ------BOTÕES DE ATUALIDADES - PARETE II - SCROLL --------------------------------
 
-      document
-        .querySelector(".comunicadosNav")
-        .addEventListener("click", () => {
-          document.getElementById("comunicados-btn").classList.add("active");
-          document.getElementById("noticias-btn").classList.remove("active");
-          comunicados.style.display = "block";
-          noticias.style.display = "none";
-          eventos.style.display = "none";
-          document
-            .querySelector("#atualidades")
-            .scrollIntoView({ behavior: "smooth" });
-        });
+      function comunicadosNavHandler() {
+        btnComunicadosHandler();
+        document.getElementById("comunicados-btn").classList.add("active");
+        document.getElementById("noticias-btn").classList.remove("active");
+        document.getElementById("eventos-btn").classList.remove("active");
+        document
+          .querySelector("#atualidades")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+
+      const comunicadosNav = document.getElementById("comunicados-link");
+      comunicadosNav.addEventListener("click", comunicadosNavHandler);
+
+      function noticiasNavHandler() {
+        btnNoticiasHandler();
+        document.getElementById("noticias-btn").classList.add("active");
+        document.getElementById("comunicados-btn").classList.remove("active");
+        document.getElementById("eventos-btn").classList.remove("active");
+        document
+          .querySelector("#atualidades")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+
+      const noticiasNav = document.getElementById("noticias-link");
+      noticiasNav.addEventListener("click", noticiasNavHandler);
+
+      function eventosNavHandler() {
+        btnEventosHandler();
+        document.getElementById("eventos-btn").classList.add("active");
+        document.getElementById("comunicados-btn").classList.remove("active");
+        document.getElementById("noticias-btn").classList.remove("active");
+        document
+          .querySelector("#atualidades")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+
+      const eventosNav = document.getElementById("eventos-link");
+      eventosNav.addEventListener("click", eventosNavHandler);
 
       // ------BOTÕES DE ATUALIDADES - PARETE III --------------------------------
 
