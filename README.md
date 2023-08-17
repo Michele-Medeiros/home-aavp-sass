@@ -10,5 +10,5 @@ Toda a estrutura do site foi rotulada convenientemente recorrendo aos tags HTML 
 
 O resultado do projeto pode ser visualizado no vídeo abaixo, além disso, também é possível visitar o site original da AVVP através do endereço: https://aavp.weebly.com/. 
 
-[![Watch the video](![alt text](img/capa_aavp.png)(https://youtu.be/4EG1OuDjCko)
+[![Watch the video](img/capa_aavp.png)(https://youtu.be/4EG1OuDjCko)
 
