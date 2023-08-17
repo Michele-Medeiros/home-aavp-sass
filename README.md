@@ -4,7 +4,7 @@ O presente projeto, foi realizado para a disciplina de Ferramentas e Aplicaçõe
 
 ##Tecnologias e metologias utilizadas:
 
-Toda a estrutura do site foi rotulada convenientemente recorrendo aos tags HTML semanticamente mais apropriados. Além disso foi utilizado Bootstrap e Nodejs para compilar o Sass. 
+Toda a estrutura do site foi rotulada convenientemente recorrendo aos tags HTML semanticamente mais apropriados. Além disso foi utilizado Bootstrap, JavaScript e Nodejs para compilar o Sass. 
 
 ## Visualização
 
